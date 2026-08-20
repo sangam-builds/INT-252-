@@ -22,7 +22,14 @@ console.log(name,age,course)
 
 // spread operator
 
-let studnets= ["abc","xyz","qwerty","sdfgh"]
-let newstudents=[...studnets,"tyuio"];
-console.log(newstudents);
-console.log(studnets);
+// let studnets= ["abc","xyz","qwerty","sdfgh"]
+// let newstudents=[...studnets,"tyuio"];
+// console.log(newstudents);
+// console.log(studnets);
+
+function summ(... numbers){
+    console.log(numbers)
+}
+
+
+summ(10,20,30,40)
