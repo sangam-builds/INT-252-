@@ -1,0 +1,23 @@
+let marks= [1,2,4,5,6]
+let total= marks.reduce((add , mark)=>{
+return add+mark
+})
+console.log(marks)
+
+// array destructuring
+
+let [a,,,b,c]=marks
+console.log(a);
+console.log(b);
+console.log(c);
+
+let student={
+    name:"Sangam",
+    age:20,
+    course:"Btech"
+}
+
+let {name,age,course}=student
+console.log(name,age,course)
+
+// spread operator
