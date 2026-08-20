@@ -21,3 +21,8 @@ let {name,age,course}=student
 console.log(name,age,course)
 
 // spread operator
+
+let studnets= ["abc","xyz","qwerty","sdfgh"]
+let newstudents=[...studnets,"tyuio"];
+console.log(newstudents);
+console.log(studnets);
