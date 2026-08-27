@@ -1,4 +1,4 @@
-let studnets= ["abc","xyz","qwerty","sdfgh"]
-// let newstudents=[...studnets,"tyuio"];
-// console.log(newstudents);
-// console.log(studnets);
+const original={
+//     name:"ajay",
+//     details:{age:25}
+// }
