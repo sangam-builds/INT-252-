@@ -1,7 +1,53 @@
 import { useState, useEffect, useCallback } from 'react'
 // import './App.css'
+import StudentCard from './components/StudentCard'
+import Card from './components/Card'
 
-export default function App() {
+
+
+import StudentList from "./components/StudentList";
+import StudentDetails from "./components/StudentDetails";
+
+function App() {
+  const students = [
+    {
+      id: 1,
+      name: "Rahul",
+      course: "CSE",
+      rollNo: "101",
+    },
+    {
+      id: 2,
+      name: "jvfn",
+      course: "CSE",
+      rollNo: "102",
+    },
+    {
+      id: 3,
+      name: "ppo",
+      course: "CSE",
+      rollNo: "103",
+    },
+  ];
+
+  const [selectStudent, setSelectedStudent] = useState(null);
+
+  return (
+    <div>
+      <h1>Student Dashboard</h1>
+
+      <StudentList
+        students={students}
+        onSelectStudent={setSelectedStudent}
+      />
+
+      <StudentDetails student={selectStudent} />
+    </div>
+  );
+}
+
+export default App;
+// export default function App() {
 
   // const [display, setDisplay] = useState('0')
   // const [equation, setEquation] = useState('')
@@ -537,10 +583,15 @@ export default function App() {
   
   // )
 
-  return(
-    <div>
-      <h1>My React App</h1>
-      <h2>Welcome students</h2>
-    </div>
-  )
-}
+//   return(
+//     <div>
+//       <h1>Student Dashboard</h1>
+//       <StudentCard name="Sangam" course="Cse" rollNo="234" isActive={true}/>
+//       <StudentCard name="trytufyi" course="Cse" rollNo="234" isActive={false}/>
+//       {/* <h1>My React App</h1>
+//       <h2>Welcome students</h2> */} 
+//     </div>
+//   )
+// }
+
+
