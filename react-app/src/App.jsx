@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 // import './App.css'
+// import './index.css'
 import StudentCard from './components/StudentCard'
 import Card from './components/Card'
 
@@ -33,7 +34,21 @@ function App() {
   const [selectStudent, setSelectedStudent] = useState(null);
 
   return (
-    <div>
+    <div style={{backgroundColor:"beige"}}>
+      <div className='title-container' style={{
+         backgroundColor: "#aa3bff",
+  padding: "20px 40px",
+  marginBottom: "30px",
+  borderRadius: "12px",
+  textAlign: "center"
+  }}>
+        <h1 className='title' style={{
+           color: "#9ca3af",
+  fontSize: "50px",
+  fontWeight: "bold",
+  margin: "0"
+        }}> Curation of the pallate</h1>
+      </div>
       <h1>Student Dashboard</h1>
 
       <StudentList

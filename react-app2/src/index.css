@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -51,21 +53,6 @@
 }
 
 body {
-  margin: 0;
-}
-
-.title-container{
-  background-color: #aa3bff;
-  padding: 20px 40px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.title{
-  color: #9ca3af;
-  font-size: 50px;
-  font-weight: bold;
   margin: 0;
 }
 
